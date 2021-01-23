@@ -50,10 +50,11 @@ def find_winner(table):
         table[0][2]==table[1][1]==table[2][0]==0):
         print("Играющий за 0, победил!")
         flag = True
-    elif -1 in table[0] or -1 in table[1] or -1 in table[2] >= 5:
+    elif -1 in table[0] or -1 in table[1] or -1 in table[2]:
         return flag
     else:
         print("\nНичья!\n")
+        flag = True
     return flag
 
 tictactoe = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]]
